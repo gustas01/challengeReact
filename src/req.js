@@ -5,7 +5,7 @@ const axios = require('axios')
 
 async function recebeDados(){
     const dados = await axios.get(url)
-    console.log (dados.data)
+    return dados.data
 }
 
-export {recebeDados}
+export {recebeDados};

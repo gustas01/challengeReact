@@ -34,7 +34,7 @@
     width: 100%;
 }
 
-.telaLogin button{
+.telaLogin .buttonLogin{
     border-radius: 8px;
     display: flex;
     align-items: center;
@@ -46,5 +46,7 @@
     font-weight: 600;
     outline: none;
     box-shadow: none;
+    text-decoration: none;
+    color: black;
 }
 
