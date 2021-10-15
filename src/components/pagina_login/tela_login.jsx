@@ -9,9 +9,9 @@ import { useDispatch } from "react-redux";
 
 export default function Login(){
     const dispatch = useDispatch()
-    
-    function handleClick(e){
 
+
+    function handleClick(e){
         dispatch({
             type: "USUARIO_DIGITADO",
             payload: document.getElementById("user").value

@@ -1,0 +1,74 @@
+.telaPerfil{
+        background-color: #292929;
+        height: 70%;
+        width: 20%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        gap: 15px;
+        border-radius: 10px;
+        color: white;
+        overflow: hidden;
+        position: relative;
+}
+
+.perfil{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    align-self: flex-start;   
+    width: 100%;
+    margin-left: 15px;
+    z-index: 2;
+}
+
+.telaPerfil .userAvatar{
+    width: 80px;
+    border-radius: 40px;
+    border: 2px solid white;
+    align-self: center;
+    margin-left: -15px;
+    margin-bottom: 20px;
+}
+
+.dados{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.linkDados{
+    text-decoration: none;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    background-color: #383838;
+    padding: 8px 0 8px 0; 
+}
+
+.linkDados:hover{
+    background-color: #2e2d2d;
+}
+
+
+
+.bio{
+    margin: 15px 15px 0 15px;
+    text-align: justify;
+}
+
+p{
+    color: rgb(153, 151, 151);
+}
+
+.fundoPreto{
+    position: absolute;
+    z-index: 1;
+    background-color: #1F1F1F;
+    width: 100%;
+    height: 100px;
+    transform: translateY(-240px);
+}
