@@ -8,7 +8,6 @@ const reducer = (state = initialState, action) =>{
     switch(action.type){
         case 'USUARIO_DIGITADO':
             const newState = {...state, user: action.payload}
-            // console.log(action.payload +" e "+newState.user)
             return newState
 
         default:

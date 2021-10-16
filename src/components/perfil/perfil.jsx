@@ -3,6 +3,7 @@ import React, { useEffect, useState } from "react";
 //useSelector é para acessar o state global do redux
 import { useSelector } from 'react-redux'
 import { Link } from "react-router-dom";
+import {BiExit} from 'react-icons/bi'
 import './perfil.css'
 
 const axios = require('axios')
@@ -11,24 +12,28 @@ export default function Perfil(){
 
     const [valoresUsuario, setValoresUsuario] = useState({})
     
-    // console.log(typeof(valoresUsuario))
 
     const user = useSelector(state => state.user)
     const url = `https://api.github.com/users/${user}`
     
-    async function recebeDados(){
-        const dados = await axios.get(url)
-        return dados.data
-    }
-
     useEffect(() => {
+        async function recebeDados(){
+            const dados = await axios.get(url)
+            return dados.data
+        }
+
         recebeDados().then(dadosUsuario => setValoresUsuario(dadosUsuario))
-    },[recebeDados])
+    },[])
 
     return (
         <div className="telaPerfil">
 
             <div className="fundoPreto"></div>
+
+            <div className="cabecalho">
+                <p >{valoresUsuario.login}</p>
+                <Link className="sair" to="/"><span>Sair</span><BiExit/></Link>
+            </div>
 
             <div className="perfil">
                 <img className="userAvatar" src={valoresUsuario.avatar_url} alt="" />
