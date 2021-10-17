@@ -23,42 +23,49 @@
 
 .setaEsquerda{
     justify-self: flex-start;
-    /* margin-left: 5%; */
     text-decoration: none;
     color: white;
 }
 
-.qntdSeguidores{
+.qntdRepositorios{
     color: white;
     justify-self: center;
     margin-right: 30%;
 }
 
-.listaSeguidores{
+.listaRepositorios{
     background-color: #292929;
     width: 100%;
     overflow: auto;
 }
 
-.avatarSeguidor{
-    width: 50px;
-    border-radius: 25px;
-    border: 2px solid white;
-}
-
-.seguidorESeta{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+.repositorio{
     padding: 15px;
+    border-bottom: 1px solid #3B3B3B;
 }
 
-.seguidor{
+.repoDescricao{
+    font-size: 0.8rem;
+}
+
+.estrelaEPrivacidade{
     display: flex;
-    align-items: center;
     justify-content: space-between;
 }
 
-.seguidor span{
-    margin-left: 20px;
+.qntdEstrelas{
+    display: flex;
+    align-items: center;
+}
+.estrela{
+    color: gold;
+}
+
+
+.repoPrivado{
+    color: red;
+}
+
+.repoPublico{
+    color: green;
 }

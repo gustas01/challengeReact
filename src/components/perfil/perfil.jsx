@@ -23,7 +23,7 @@ export default function Perfil(){
         }
 
         recebeDados().then(dadosUsuario => setValoresUsuario(dadosUsuario))
-    },[])
+    },[url])
 
     return (
         <div className="telaPerfil">
@@ -38,7 +38,7 @@ export default function Perfil(){
             <div className="perfil">
                 <img className="userAvatar" src={valoresUsuario.avatar_url} alt="" />
                 <h2 className="userName"> {valoresUsuario.name}</h2>
-                <p className="userEmail">gustavohdlima@hotmail.com</p>
+                <p className="userEmail">{valoresUsuario.email}</p>
                 <p className="userLocation">{valoresUsuario.location}</p>
             </div>
             
@@ -48,12 +48,12 @@ export default function Perfil(){
                     <p>Seguidores</p>
                 </Link>
 
-                <Link to="" className="linkDados">
+                <Link to="/seguindo" className="linkDados">
                     <h1>{valoresUsuario.following}</h1>
                     <p>Seguindo</p>
                 </Link>
 
-                <Link to="" className="linkDados">
+                <Link to="/repositorios" className="linkDados">
                     <h1>{valoresUsuario.public_repos}</h1>
                     <p>Repositórios</p>
                 </Link>
