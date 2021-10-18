@@ -16,7 +16,6 @@ const reducer = (state = initialState, action) =>{
 
 }
 
-//o createStore vai nos dar o reducer
 const store = createStore(reducer)
 
 export default store

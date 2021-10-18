@@ -4,14 +4,13 @@ import './tela_login.css'
 import { Link } from "react-router-dom";
 import {AiOutlineArrowRight} from 'react-icons/ai'
 
-//useDispatch é para salvar as informações e informar os tipos das ações no state global do redux
 import { useDispatch } from "react-redux";
 
 export default function Login(){
     const dispatch = useDispatch()
 
 
-    function handleClick(e){
+    function handleClick(){
         dispatch({
             type: "USUARIO_DIGITADO",
             payload: document.getElementById("user").value

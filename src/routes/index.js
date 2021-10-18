@@ -1,6 +1,5 @@
 import React from "react";
 import { Switch, Route } from "react-router";
-
 import Login from "../components/pagina_login/tela_login";
 import Perfil from "../components/perfil/perfil";
 import Seguidores from "../components/seguidores/seguidores"

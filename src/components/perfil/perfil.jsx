@@ -1,6 +1,4 @@
 import React, { useEffect, useState } from "react";
-
-//useSelector é para acessar o state global do redux
 import { useSelector } from 'react-redux'
 import { Link } from "react-router-dom";
 import {BiExit} from 'react-icons/bi'
